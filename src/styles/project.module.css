@@ -1,0 +1,100 @@
+/**
+ * .portfolio {
+ *   text-align: center;
+ * }
+ *
+ * @format
+ */
+
+.portfolio > h2 {
+  font-size: 3em;
+  margin-top: 80px;
+  text-align: center;
+}
+.portfolio > h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+  margin: 80px 20px;
+}
+
+.line {
+  border: 1px solid rgba(235, 235, 235, 25%);
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.projectsLink {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.previousUrl {
+  display: inline-block;
+  padding-bottom: 8px;
+  border-bottom: 1px solid transparent;
+}
+
+.previousUrl:hover {
+  border-color: white;
+}
+
+.disabledStyle {
+  color: #ccc;
+}
+
+.pagination {
+  display: flex;
+  gap: 24px;
+  font-weight: bold;
+}
+
+.pagination a {
+  border: 1px solid white;
+  padding: 8px;
+}
+
+.projects a {
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.projects h3 {
+  /* text-align: center; */
+  margin: 20px auto 0px;
+  font-weight: 500;
+}
+
+.date {
+  margin-bottom: 1rem;
+}
+.date p {
+  font-size: 12px;
+  margin: 0;
+  color: #ccc;
+}
+
+.projects h5 {
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  color: #c0f26d;
+  font-size: 0.8em;
+}
+
+.html {
+  height: 120px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.projects .html p {
+  color: #ccc;
+  margin-top: 4px;
+  font-size: 1em;
+}

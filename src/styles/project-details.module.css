@@ -1,0 +1,25 @@
+/** @format */
+
+.details h2 {
+  font-size: 3.5em;
+  margin-top: 80px;
+}
+.details h3 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.html {
+  margin-top: 40px;
+}
+.featured {
+  margin-bottom: 10px;
+}
+
+.details h5 {
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #c0f26d;
+  font-size: 0.9em;
+}

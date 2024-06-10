@@ -1,0 +1,79 @@
+.about {
+  text-align: center;
+}
+.about > h2 {
+  font-size: 3em;
+  margin-top: 80px;
+}
+.about > h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+
+.story {
+  display: grid;
+  grid-template-columns: 6fr 5fr;
+  align-items: center;
+  
+}
+
+.story h3 {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+
+.story h4 {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.contactForm {
+  background-color: white;
+  padding: 80px;
+}
+
+.contactForm button {
+  background-color:#922be1;
+  width: 120px;
+  height: 50px;
+  border : none;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.contactForm h3{
+  color: #1f1f1f;
+}
+.contactForm p{
+  color: #1f1f1f;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+}
+
+form input {
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  background: none;
+  color: black;
+  font-size: 1.1em;
+}
+
+form textarea{
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  background: none;
+  color: black;
+  font-size: 1.1em;
+}

@@ -1,0 +1,22 @@
+.cta {
+  margin-top: 10rem;
+  position: relative;
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Ubah sesuai dengan warna teks yang sesuai dengan gambar latar belakang */
+  z-index: 1; /* Pastikan elemen-elemen ini berada di atas gambar */
+}
+.content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.GatsbyImage-wrapper {
+  z-index: 0; /* Pastikan gambar berada di belakang elemen lain */
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Saravana Sk",
+    "job": "Ceo Founder",
+    "description": "I can't recommend Pawsome Pet Pal enough! As a pet owner juggling work and pesonal life, this app has been an absolute game-changer. From scheduling appointments to tracking my furry friend's medication.",
+    "image": "../images/testimoni/testi-1.jpg"
+  },
+  {
+    "title": "Pyasmita Das",
+    "job": "Pet Owner",
+    "description": "Incredibily helpful for nwe pet owners! The community here is so supportive, offering valuable advice ands resources for trainig, healths,and nutrition. A must-have for anyone with a fur baby!",
+    "image": "../images/testimoni/testi-2.jpg"
+  },
+  {
+    "title": "suryakanta das",
+    "job": "Pet Care",
+    "description": "World's first pet community app, with Zoop Talks, they are also the first podcast for Pet parents, rescue, pet lover, so the thought process is innovative and definiteky new thing in the market. Go for it",
+    "image": "../images/testimoni/testi-3.jpg"
+  }
+]
