@@ -1,0 +1,307 @@
+/** @format */
+
+.containerPaw h2 {
+  font-family: "Quando", Sans-serif;
+  font-size: 88px;
+  font-weight: 600;
+  color: #6e50f6;
+}
+
+.containerPaw h4 {
+  margin: 0;
+  color: #6e50f6;
+  font-family: "Poppins", Sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.containerPaw h1 {
+  color: #000000;
+  font-family: "Quando", Sans-serif;
+  font-size: 2.8em;
+  font-weight: 600;
+}
+
+.containerPaw p {
+  color: #777777;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.firstHeader {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 2rem 5rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.firstHeader p {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.secondHeader {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.secondHeader p {
+  text-align: center;
+  color: #777777;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 0.9em;
+  padding: 0 12rem;
+  line-height: 1.5;
+  margin-top: 12px;
+}
+
+.secondHeader img {
+  margin: 7rem 5rem;
+}
+
+.thirdHeader {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: auto;
+  justify-content: center;
+  text-align: start;
+  max-width: 1200px;
+  gap: 5rem;
+}
+
+.thirdHeader p {
+  max-width: 600px;
+}
+
+.thirdHeader .title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.thirdHeader .graph h5 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #f64648;
+}
+
+.thirdHeader .graph h4 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #333333;
+  margin-top: 0.8rem;
+}
+
+.thirdHeader .content .graph p {
+  font-weight: 400;
+}
+
+.thirdHeader ul {
+  list-style: numeric;
+  padding-left: 2rem;
+  font-size: 0.8em;
+  color: #777777;
+  font-weight: 400;
+}
+
+.thirdHeader .list {
+  margin-top: 1.5rem;
+}
+
+.thirdHeader .timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.thirdHeader .timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 1.2px;
+  height: 100%;
+  background-color: #6e50f6;
+}
+
+.thirdHeader .list {
+  position: relative;
+}
+
+.thirdHeader .list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 10px;
+  height: 10px;
+  background-color: #6e50f6;
+  border: 2px solid #6e50f6;
+  border-radius: 50%;
+}
+
+.fourHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 5rem;
+  align-items: center;
+}
+
+.fourHeader .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fourHeader img {
+  width: 100%;
+  border-radius: 10px;
+}
+.fourHeader ul {
+  margin-top: 1rem;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.fourHeader ul li {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 25fr;
+  align-items: center;
+  color: #777777;
+}
+
+.fourHeader svg {
+  font-size: 1em;
+  font-weight: bolder;
+  color: #6e50f6;
+  margin-right: 1rem;
+}
+
+.fiveHeader {
+  text-align: center;
+}
+
+.fiveHeader h1 {
+  color: #000000;
+  font-family: "Poppins", Sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.fiveHeader p {
+  padding: 2rem 18rem;
+  line-height: 1.5;
+}
+
+/* Assuming this is in YourStyles.module.css */
+
+.gridBanner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 12px;
+  padding: 20px;
+  margin: 0 3rem;
+}
+
+.gridBanner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gridBanner img:nth-child(4) {
+  margin-top: -50%;
+}
+
+.gridBanner img:nth-child(7) {
+  margin-top: -75%;
+}
+
+.gridBanner img:nth-child(9) {
+  margin-top: -85%;
+}
+
+.gridBanner img:nth-child(10) {
+  margin-top: -38%;
+}
+
+.gridBanner img:nth-child(12) {
+  margin-top: -110%;
+}
+
+.gridBanner img:nth-child(14) {
+  margin-top: -45%;
+}
+
+.gridBanner img:hover {
+  /* transform: scale(1.05); */
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  max-width: 70%;
+}
+
+.modalContent img {
+  width: 100%;
+  height: 100vh;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sixHeader {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.2rem;
+  margin: 8rem 3rem;
+}
+
+.sixHeader h1 {
+  font-family: "Quando", Sans-serif;
+  font-weight: 600;
+  color: #6e50f6;
+  font-size: 2em;
+  line-height: 1;
+}
+
+.sixHeader .content h1 {
+  color: #000000;
+}
+
+.sixHeader p {
+  margin-top: 1rem;
+}

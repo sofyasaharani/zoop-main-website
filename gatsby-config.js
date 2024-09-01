@@ -23,6 +23,7 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -47,9 +48,9 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: "Web Warrior",
-    description: "web dev portfolio",
-    copyright: "This website is copyright 2021 Web Warrior",
-    contact: "me@thewebwarrioruk.co.uk",
+    title: "Zoop",
+    description: "web pets",
+    copyright: "This website is copyright 2024 Zoop Pets",
+    contact: "zoop@gmail.com",
   },
 };

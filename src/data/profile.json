@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "job": "Software Engineer",
+    "startDate": "January 2024",
+    "profilePicture": "/path/to/profile-pic1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "job": "Product Manager",
+    "startDate": "March 2024",
+    "profilePicture": "/path/to/profile-pic2.jpg"
+  }
+]

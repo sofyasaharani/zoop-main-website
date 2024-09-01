@@ -1,0 +1,315 @@
+/** @format */
+
+.containerStray h1 {
+  color: #000000;
+  font-family: "Quicksand", Sans-serif;
+  font-size: 120px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 1em;
+}
+
+.firstHeader {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.firstHeader .firstHeader img {
+  scale: 1.1;
+}
+
+.firstHeader p {
+  text-align: center;
+  color: #777777;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 0.9em;
+  padding: 0 12rem;
+  line-height: 1.5;
+  margin-top: 12px;
+}
+
+.secondHeader {
+  margin: 30rem 4rem 4rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.secondHeader img {
+  width: 100%;
+}
+
+.secondHeader h1 {
+  font-size: 2.5em;
+}
+
+.secondHeader p {
+  margin-top: 1.5rem;
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: 0.9em;
+}
+
+.secondHeader .imageContainer {
+  position: relative;
+  width: fit-content;
+}
+
+.secondHeader .imageOne {
+  position: relative;
+  z-index: 1;
+}
+
+.secondHeader .imageTwo {
+  position: absolute;
+  bottom: 2%;
+  left: 50px;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+.thirdHeader {
+  margin-top: 5rem;
+}
+
+.timelineSliderContainer {
+  max-width: 100%; /* Full width of the screen */
+  padding: 50px 0;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 5rem;
+  position: relative;
+}
+
+.timelineScroller {
+  display: flex;
+  width: max-content;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  cursor: grab;
+}
+
+.timelineScroller.active {
+  cursor: grabbing;
+}
+
+.thirdHeader h1 {
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.timelineContent h2 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.timelineContent h5 {
+  color: #888888;
+  font-family: "Lato", Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.timelineSlide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.timelineContentWrapper {
+  display: flex;
+  /* gap: 20px; */
+  justify-content: center;
+}
+
+.iconContainer {
+  width: 400px;
+  background-color: white;
+  padding: 10px 20px 0px 50px;
+  border-radius: 10px;
+  text-align: right;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5rem;
+  margin-left: 20px;
+}
+
+.iconContainer h5 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+.iconContainer p {
+  color: #666666;
+  font-size: 0.8em;
+  padding-bottom: 50px;
+}
+
+/* Container for the line graph and circles */
+.lineGraph {
+  position: relative;
+  width: 100%;
+  height: 20px; /* Height of the line graph */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Horizontal line */
+.graphLine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 2px; /* Thickness of the line */
+  background-color: #6e50f6; /* Line color */
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+/* Circle on the line graph */
+.graphCircle {
+  position: absolute;
+  top: 50%;
+  width: 10px; /* Diameter of the circle */
+  height: 10px;
+  background-color: #6e50f6; /* Circle color */
+  border: 2px solid #ffffff; /* Circle border */
+  border-radius: 50%;
+  transform: translate(-50%, -50%); /* Center the circle */
+}
+
+.fourHeader .content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  margin: 5rem 10rem;
+  gap: 10rem;
+}
+
+.fourHeader h1 {
+  font-family: "Quicksand", Sans-serif;
+  font-size: 2.5em;
+  color: #6e50f6;
+  font-weight: 600;
+}
+
+.fiveHeader {
+}
+
+/* Overall container styling for the timeline */
+.timelineContainer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* Three columns: left, line, right */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 5rem auto;
+  align-items: start; /* Align items at the start */
+}
+
+/* Styling for the left and right columns */
+.leftColumn,
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for the right column to center its content */
+.rightColumn {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the vertical line graph */
+.timelineContainer .lineGraph {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 2px;
+  background-color: #ccc; /* Line color */
+  height: 100%; /* Full height */
+  margin: 0 auto;
+}
+
+/* The vertical line itself */
+.timelineContainer .line {
+  position: absolute;
+  background-color: #6e50f6;
+  width: 2px;
+  height: 100%;
+}
+
+/* Circles on the line graph representing points */
+.timelineContainer .circle {
+  width: 15px;
+  height: 15px;
+  background-color: #6e50f6;
+  border-radius: 50%;
+  position: relative;
+}
+
+.timelineContainer .iconContainer {
+  width: auto;
+  background-color: white;
+  padding: 10px 20px 0px 50px;
+  border-radius: 10px;
+  text-align: right;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5rem;
+  margin-left: 20px;
+}
+
+.svg {
+  fill: #6e50f6; /* Change on hover */
+  width: 30px;
+  height: 30px;
+  transition: fill 0.3s ease;
+}
+
+.sixHeader {
+  margin: 10rem 4rem 4rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  font-family: "Quicksand", Sans-serif;
+}
+
+.sixHeader .imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sixHeader img {
+  width: 100%;
+}
+
+.sixHeader .textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sixHeader h1 {
+  font-size: 2.5em;
+  color: #6e50f6;
+  font-weight: bold;
+}
+
+.sixHeader h2 {
+  font-size: 2em;
+}
+
+.sixHeader h4 {
+  color: #6e50f6;
+  margin: 0;
+  font-size: 1.5em;
+}

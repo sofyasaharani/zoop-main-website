@@ -1,25 +1,72 @@
 /** @format */
 
-.details h2 {
-  font-size: 3.5em;
-  margin-top: 80px;
-}
-.details h3 {
-  font-size: 2em;
-  font-weight: 400;
-  margin-bottom: 40px;
-}
-.html {
-  margin-top: 40px;
-}
-.featured {
-  margin-bottom: 10px;
+.fullWidthImage {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
-.details h5 {
-  margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  color: #c0f26d;
+.titleOverlay {
+  position: absolute;
+  top: 50%;
+  left: 5%; /* Adjust left margin as needed */
+  transform: translateY(-50%); /* Vertically center the text */
+  display: flex;
+  align-items: center;
+  color: #fcfcfc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 3.5em; /* Adjust font size as needed */
+  z-index: 1; /* Ensure it is above the image */
+  font-weight: 700;
+  max-width: 80%; /* Prevent the text from stretching too wide */
+  white-space: pre-wrap; /* Allow text to wrap onto multiple lines */
+  text-align: center; /* Center text within the container */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between columns */
+  margin-top: 20px; /* Add some space below the full-width image */
+}
+
+.details {
+  flex: 2;
+  max-width: 70%; /* Adjust main content width */
+  padding: 20px;
+  margin-left: 3rem;
+  margin-top: 5rem;
+}
+
+.featured {
+  margin-bottom: 20px;
+}
+
+.html p {
+  margin-top: 0; /* Remove extra space above paragraphs */
+  margin-bottom: 10px; /* Add a small space below paragraphs */
+  line-height: 1.6;
   font-size: 0.9em;
+  color: #767676;
+}
+
+.html h2 {
+  margin: 3rem 0;
+}
+
+.html img {
+  width: 800px; /* Ensure the image spans the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Optional: set a maximum height */
+  object-fit: cover; /* Ensure the image covers the container properly */
+  border-radius: 8px;
+  margin-bottom: 10px; /* Control space below images */
+}
+
+.sidebar {
+  flex: 0 0 30%; /* Adjust sidebar width */
+  padding: 20px;
+  background-color: #f4f4f4; /* Background color for sidebar */
+  border-left: 1px solid #ddd; /* Border between content and sidebar */
 }

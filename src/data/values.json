@@ -1,17 +1,22 @@
 [
   {
-    "title": "Compassion",
-    "description": "At Zoop, compassion towards all animals is at the heart of everything we do.",
-    "image": "/images/features/noun_branding_1885335.svg"
+    "title": "Connect Globally",
+    "description": "Build friendships with fellow pet lovers.",
+    "image": "/images/zoop-logo-pink.png"
   },
   {
-    "title": "Inclusivity",
-    "description": "We believe in creating an inclusive and supportive environment for all pet owners and animal lovers.",
-    "image": "/images/features/noun_The Process_1885341.svg"
+    "title": "Help Animals",
+    "description": "Find homes & support strays.",
+    "image": "/images/zoop-logo-orange.png"
   },
   {
-    "title": "Community",
-    "description": "Building a positive community where pet enthusiasts come together to celebrate the joys of pet ownership.",
-    "image": "/images/features/noun_3d modeling_1885342.svg"
+    "title": "Stay Informed",
+    "description": "Join pet welfare events.",
+    "image": "/images/zoop-logo-green.png"
+  },
+  {
+    "title": "Walk with Purpose",
+    "description": "Exercise your pet & help strays (challenges).",
+    "image": "/images/zoop-logo-cyan.png"
   }
 ]

@@ -1,22 +1,79 @@
+/** @format */
+
 .cta {
-  margin-top: 10rem;
+  margin-top: 1rem;
   position: relative;
+  margin: 0.8rem;
+  border-radius: 10px;
 }
 
-.content{
+.content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  margin-left: 8rem;
+  margin-top: 3rem;
+  /* text-align: center; */
   color: white; /* Ubah sesuai dengan warna teks yang sesuai dengan gambar latar belakang */
   z-index: 1; /* Pastikan elemen-elemen ini berada di atas gambar */
 }
+
 .content h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: #6e50f6;
+}
+.content p {
+  font-size: 0.9em;
+  color: black;
 }
 
-.GatsbyImage-wrapper {
-  z-index: 0; /* Pastikan gambar berada di belakang elemen lain */
+.imageWrapper {
+  /* height: 700px; */
+  border-radius: 10px; /* Adjust the radius as needed */
+  overflow: hidden; /* Ensures the image corners match the wrapper's radius */
+}
+
+/* SubscriptionForm.css */
+
+.subscriptionForm {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  gap: 3rem;
+  margin-left: auto;
+  margin-right: 90px;
+  background-color: white;
+}
+
+.subscriptionForm input {
+  min-width: 250px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 14px 10px; /* Match the padding of the container */
+  flex-grow: 1;
+}
+
+.subscriptionButton {
+  height: 100%;
+  width: 10rem;
+  border: none;
+  background-color: #6e50f6;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding: 14px 20px;
+  border-radius: 0px;
+  transition: background-color 0.3s;
+  border-radius: 0 5px 5px 0;
+}
+
+.subscriptionButton:hover {
+  background-color: #856ff3; /* Optional: darker shade on hover */
 }

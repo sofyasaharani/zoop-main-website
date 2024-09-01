@@ -1,15 +1,101 @@
 /** @format */
 
-.appBtn {
-  display: inline-block;
-  background: #c0f26d;
-  padding: 8px 16px;
-  border-radius: 10px;
-  margin-top: 20px;
-  font-weight: bold;
-  color: #922be1;
-  font-size: 16px;
+.navbar {
+  /* margin-bottom: 100px; */
+  border-bottom: 1px solid #dedede;
+}
+
+.navList {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.searchBtn {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  gap: 3rem;
+  margin-left: auto;
+  margin-right: 90px;
+}
+
+.arrowIcon {
+  margin-left: 5px;
+  font-size: 10px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.searchBtn input {
+  min-width: 250px;
   border: none;
+  background-color: transparent;
+  outline: none;
+  flex-grow: 1;
+  padding: 2px 8px;
+}
+
+.searchIcon {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6e50f6; /* Adjust icon color as needed */
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownLink {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  display: block;
+}
+
+/* Hide dropdown content by default */
+.dropdownContent {
+  display: none;
+  position: absolute;
+
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  width: 200px;
+}
+
+/* Style dropdown items */
+.dropdownContent .dropdownItem {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hover effect for dropdown items */
+.dropdownContent .dropdownItem:hover {
+  background-color: #f4f4f4;
+}
+
+/* Show dropdown content when hovering over the parent dropdown */
+.dropdown:hover .dropdownContent {
+  display: block;
 }
 
 .header {
@@ -70,7 +156,7 @@
   color: black;
 }
 .card h2 {
-  color: #922be1;
+  color: #6e50f6;
 }
 
 .card-container {

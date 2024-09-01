@@ -1,0 +1,38 @@
+/** @format */
+
+.privacy-policy-container {
+  max-width: 100%;
+  border-top: 1px solid rgba(119, 119, 119, 0.2);
+  margin-bottom: 8rem;
+}
+
+.privacy-policy-content {
+  font-size: 1em;
+  line-height: 1.8;
+  color: #777777;
+  margin: 0 3rem;
+}
+
+.privacy-policy-content h2 {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.8em;
+}
+
+.privacy-policy-content h5 {
+  margin-bottom: 0.8rem;
+}
+
+.privacy-policy-content p {
+  margin-bottom: 15px;
+  font-size: 0.8em;
+}
+
+.privacy-policy-content a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.privacy-policy-content a:hover {
+  text-decoration: underline;
+}

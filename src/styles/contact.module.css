@@ -1,0 +1,244 @@
+/** @format */
+
+.contact .imageContainer img {
+  height: 380px;
+  width: 100%;
+}
+.contact .title {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  margin-top: 3rem;
+
+  z-index: 100;
+}
+
+.contact .title h2 {
+  text-align: start;
+  color: #000000;
+  font-size: 4em;
+}
+
+.contact .title p {
+  font-size: 0.9em;
+}
+
+.desc {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.desc h1 {
+  font-size: 3.8em;
+  font-weight: bold;
+}
+
+.desc h3 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.info {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info .infoContent {
+  text-align: center;
+}
+
+.infoIcon {
+  display: inline-block;
+  background-color: #6e50f6;
+  padding: 0.8rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 5px;
+}
+
+.infoIcon svg {
+  color: white;
+  font-size: 1.5rem; /* Size of the icon */
+}
+
+.infoContent h1 {
+  font-size: 1.2em;
+  color: #3c3450;
+}
+
+.infoContent p {
+  color: #777777;
+}
+
+.contactForm {
+  background-color: white;
+  margin-right: 12rem;
+  margin-top: 10rem;
+}
+
+.contactForm button {
+  background-color: #922be1;
+  width: 120px;
+  height: 50px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.contactForm h3 {
+  color: #1f1f1f;
+}
+.contactForm p {
+  color: #1f1f1f;
+}
+
+.banner {
+  position: relative;
+}
+
+.formBox {
+  position: absolute; /* Position formBox over the image */
+  top: 55%; /* Center the formBox vertically */
+  left: 73%;
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  background-color: #f1faff;
+  padding: 2rem;
+  z-index: 100; /* Ensure it appears above the image */
+  /* height: 400px; */
+  width: 75%;
+  border-radius: 10px;
+}
+
+.formBox h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.formBox p {
+  text-align: center;
+}
+
+/* Form input styling */
+.formBox form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formBox input,
+.formBox textarea {
+  width: 100%;
+  padding: 0.8rem;
+  /* font-size: 1em; */
+  border: 1px solid hsl(251, 90%, 64%, 0.3);
+  border-radius: 5px;
+}
+
+.formBox textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.formBox input:focus,
+.formBox textarea:focus {
+  border-color: #922be1;
+  outline: none;
+}
+
+.formBox button {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #6e50f6;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  height: 40px;
+}
+
+.formBox p:last-child {
+  font-size: 0.8em;
+  color: #777777;
+  padding: 0 6rem;
+  margin-bottom: 1.5rem;
+}
+
+.strong {
+  color: #fe624d;
+  font-weight: 500;
+}
+
+.frequently {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+.frequently h3 {
+  font-size: 52px;
+  color: #3a4c69;
+  font-family: "Caveat Brush", Sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.frequently .content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+}
+
+.content img {
+  width: 100%;
+}
+
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.faq h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #3c3450;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.faqQuestion {
+  color: #3c3450;
+  background-color: #ffffff;
+  border-color: #cbb5ff;
+
+  padding: 18px 18px 18px 18px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 4px 4px 4px 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faqAnswer {
+  background-color: #ffffffb5;
+  border-color: #e2f5ff;
+  padding: 25px 25px 25px 25px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 4px 4px 4px 4px;
+  margin-top: 5px;
+}
+
+.faqAnswer p {
+  color: #777777;
+}
