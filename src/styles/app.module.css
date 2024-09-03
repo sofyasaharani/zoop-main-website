@@ -1,7 +1,10 @@
-/** @format */
+/**
+ * Navbar styles
+ *
+ * @format
+ */
 
 .navbar {
-  /* margin-bottom: 100px; */
   border-bottom: 1px solid #dedede;
 }
 
@@ -65,11 +68,18 @@
   display: block;
 }
 
-/* Hide dropdown content by default */
+.navLink {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  display: block;
+}
+
 .dropdownContent {
   display: none;
   position: absolute;
-
   background: white;
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -80,7 +90,6 @@
   width: 200px;
 }
 
-/* Style dropdown items */
 .dropdownContent .dropdownItem {
   display: block;
   padding: 10px;
@@ -88,16 +97,20 @@
   color: #333;
 }
 
-/* Hover effect for dropdown items */
+.dropdownContent .dropdownItem.active {
+  color: #6e50f6; /* Active dropdown item color */
+  font-weight: bold;
+}
+
 .dropdownContent .dropdownItem:hover {
   background-color: #f4f4f4;
 }
 
-/* Show dropdown content when hovering over the parent dropdown */
 .dropdown:hover .dropdownContent {
   display: block;
 }
 
+/* Header and other styles */
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -113,6 +126,7 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
 .header p {
   font-size: 14px;
   margin-bottom: 40px;
@@ -155,6 +169,7 @@
 .card p {
   color: black;
 }
+
 .card h2 {
   color: #6e50f6;
 }
@@ -188,4 +203,15 @@
 .line {
   padding: 16px;
   border-bottom: solid 1px white;
+}
+
+/* Style for active links */
+.navList a.active {
+  border-bottom: 1px solid #6e50f6;
+  color: #6e50f6; /* Font color for the active link */
+}
+
+.dropdownLink.active {
+  border-bottom: 1px solid #6e50f6;
+  color: #6e50f6; /* Font color for the active link */
 }

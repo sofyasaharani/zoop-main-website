@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 import { FaSearch } from "react-icons/fa";
 import { StaticImage } from "gatsby-plugin-image";
@@ -8,6 +8,9 @@ import * as appStyles from "../styles/app.module.css";
 import { BiSolidDownArrow } from "react-icons/bi";
 
 export default function Navbar() {
+  const [activeLink, setActiveLink] = useState("");
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const links = document.querySelectorAll("nav a");
@@ -28,6 +31,11 @@ export default function Navbar() {
     };
   }, []);
 
+  const handleDropdownClick = () => {
+    setDropdownOpen(!dropdownOpen);
+    setActiveLink(dropdownOpen ? "" : "withUs");
+  };
+
   return (
     <nav className={appStyles.navbar}>
       <div>
@@ -42,20 +50,30 @@ export default function Navbar() {
         />
       </div>
       <div className={appStyles.navList}>
-        <Link to="/" className="">
+        <Link to="/" className={activeLink === "" ? "active" : ""}>
           Home
         </Link>
-        <Link to="/about/" className="">
+        <Link to="/about/" className={activeLink === "about" ? "active" : ""}>
           About
         </Link>
-        <Link to="/zoop-daily/" className="">
+        <Link
+          to="/zoop-daily/"
+          className={activeLink === "blog" ? "active" : ""}>
           Blog
         </Link>
         <div className={appStyles.dropdown}>
-          <Link to="#" className={appStyles.dropdownLink}>
+          <Link
+            to="#"
+            className={`${appStyles.dropdownLink} ${
+              activeLink === "withUs" ? "active" : ""
+            }`}
+            onClick={handleDropdownClick}>
             With Us <BiSolidDownArrow className={appStyles.arrowIcon} />
           </Link>
-          <div className={appStyles.dropdownContent}>
+          <div
+            className={`${appStyles.dropdownContent} ${
+              dropdownOpen ? appStyles.show : ""
+            }`}>
             <Link to="/paw-protection-fund/" className={appStyles.dropdownItem}>
               Paw Protection Fund
             </Link>
@@ -64,8 +82,9 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
-
-        <Link to="/contact/" className="">
+        <Link
+          to="/contact/"
+          className={activeLink === "contact" ? "active" : ""}>
           Contact
         </Link>
       </div>
